@@ -1,0 +1,16 @@
+
+/* estlização dos botões de redes sociais e footer do site*/
+.cabecalho{
+    text-align: center;
+}
+footer{
+    background-color: #132235;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width:100%;   
+    text-align: center;
+}
+.redes-sociais{
+    margin: 10px;
+}
