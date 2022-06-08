@@ -1,16 +1,108 @@
-
 /* estlização dos botões de redes sociais e footer do site*/
-.cabecalho{
-    text-align: center;
+* {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
 }
-footer{
+
+.cabecalho {
+    text-align: center;
+
+
+}
+
+.janela-busca {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+
+}
+
+.float-pai {
+    background-color: blue;
+    z-index: 100;
+    width: 1000px;
+    height: 550px;
+    position: absolute;
+    border-style: solid;
+    border-color: pink;
+
+}
+
+.float {
+    background-color: green;
+    z-index: 100;
+    width: 500px;
+    height: 500px;
+
+    margin: 50px 50px 50px 50px;
+    border-style: solid;
+    border-color: purple;
+
+
+}
+
+.banner {
+    position: static;
+    width: 100%;
+    background-image: url("/img/banner.png");
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 800px;
+    border-style: solid;
+    border-color: yellow;
+}
+
+.janela-Blog {
+    height: 500px;
+    width: 100%;
+    background-color: blueviolet;
+    padding: 50px;
+    margin-top: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    border-style: solid;
+    border-color: pink;
+    overflow: hidden;
+    justify-content: space-around;
+}
+
+.text-Box {
+    width: 500px;
+    text-align: center;
+    border-style: solid;
+    border-color: cadetblue;
+    height: 99%;
+
+}
+
+.imagem2 {
+
+    height: 100%;
+}
+
+@media(max-height:500px) {
+    .float {
+        ;
+
+    }
+
+    .banner {
+        margin-top: 520px;
+    }
+
+}
+
+footer {
     background-color: #132235;
     align-items: center;
     position: fixed;
     bottom: 0;
-    width:100%;   
+    width: 100%;
     text-align: center;
 }
-.redes-sociais{
+
+.redes-sociais {
     margin: 10px;
 }
