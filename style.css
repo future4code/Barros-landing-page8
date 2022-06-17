@@ -32,7 +32,7 @@ body {
     color: #112033;
     border-radius: 10px;
     max-width: 300px;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 .caixa-de-busca input[type=button] {
@@ -62,7 +62,7 @@ body {
 .banner {
     position: static;
     width: 100%;
-    background-image: url("/img/banner.png");
+    background-image: url("img/banner.png");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -75,13 +75,12 @@ body {
     height: 500px;
     width: 100%;
     background-color: #68BDBA;
-    margin-top: 75px;
+    margin-top: 15px;
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
     justify-content: space-between;
     border-radius: 10px;
-
 }
 
 .text-Box {
@@ -91,26 +90,19 @@ body {
     justify-content: space-around;
     flex-direction: column;
     padding: 100px 0;
-
-
-
-
 }
 
 .imagem2 {
     background-image: url(/img/housesharingFINAL.jpg);
     width: 50%;
-
     background-repeat: no-repeat;
     background-position: bottom;
-
-
 }
 
 /*Parte de criar republica/oferecer quarto*/
 .fundo {
     background-image: url(img/wildwest.jpg);
-    width: 60%;
+    width: 90%;
 
     display: block;
     background-repeat: no-repeat;
@@ -124,7 +116,7 @@ body {
 .criar-republica {
 
     background-color: #132235e1;
-    margin-top: 75px;
+    margin-top: 15px;
     border-radius: 10px;
     height: 100%;
     width: 100%;
@@ -139,13 +131,15 @@ body {
 }
 
 .janela-republica {
-    width: 300px;
-    height: 700px;
+    width: 45%;
+    height: 80%;
     background-color: #4a798162;
     border-radius: 10px;
     padding: 10px;
+    margin: 10px;
 
 }
+
 
 .img-republica {
     width: 100%;
@@ -206,4 +200,5 @@ footer {
 
 .redes-sociais {
     margin: 10px;
+    padding-top: 3px;
 }
