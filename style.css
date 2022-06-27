@@ -1,0 +1,274 @@
+/* estlização geral de margem e fonte do site*/
+* {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.cabecalho {
+    text-align: center;
+    background-color: white;
+}
+
+body {
+    min-width: 360px;
+    background-color: black;
+
+}
+
+/* janela de busca*/
+.janela-busca {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.caixa-de-busca input[type=text] {
+    float: left;
+    padding: 6px;
+    border: solid #4A7981;
+    margin-top: 20px;
+    font-size: 24px;
+    background-color: white;
+    max-height: 100px;
+    color: #112033;
+    border-radius: 10px;
+    max-width: 300px;
+    margin-left: 10px;
+}
+
+.caixa-de-busca input[type=button] {
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 30px;
+}
+
+.caixa-de-busca-pai {
+    background-color: transparent;
+    width: 100%;
+    height: 550px;
+    position: absolute;
+    border-style: none;
+}
+
+.caixa-de-busca {
+    background-color: #132235e7;
+    z-index: 100;
+    width: 50%;
+    height: 500px;
+    display: grid;
+    margin: 50px 50px 50px 50px;
+    border-radius: 20px;
+}
+
+.banner {
+    position: static;
+    width: 100%;
+    background-image: url("img/banner.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    background-position: right;
+}
+
+/*parte de republicas organizadas*/
+.janela-blog {
+    height: 500px;
+    width: 80%;
+    background-color: #68BDBA;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.text-box {
+    width: 50%;
+    text-align: center;
+    color: #132235e1;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 100px 0;
+}
+
+.imagem2 {
+    background-image: url(/img/housesharingFINAL.jpg);
+    width: 50%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+/*Parte de criar republica/oferecer quarto*/
+.fundo {
+    background-image: url(img/wildwest.jpg);
+    width: 80%;
+
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: auto;
+
+
+}
+
+.criar-republica {
+    background-color: #132235e1;
+    margin-top: 15px;
+    border-radius: 10px;
+
+    width: 100%;
+    color: #fcfcfc;
+    font-size: larger;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+.janela-republica {
+    width: 300px;
+    height: 660px;
+    background-color: #4a798162;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+
+.img-republica {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.janela-motivos {
+    padding: auto;
+    color: white;
+    width: 100%;
+    text-align: center;
+    display: block;
+
+}
+
+.motivos {
+
+    margin: auto;
+    gap: 20px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.motivos-card {
+    background-color: steelblue;
+    border-radius: 10px;
+
+    padding: 5%;
+    text-align: center;
+}
+
+.imgmotivo {
+    height: 60px;
+}
+
+/* footer e links de redes sociais*/
+footer {
+    background-color: #132235;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+.redes-sociais {
+    margin: 10px;
+    padding-top: 3px;
+}
+
+/* reponsividade para iphones 6/7/8: */
+@media (min-width:320px) and (max-width:667px) {
+    .fundo {
+        background-image: none;
+    }
+
+    .caixa-de-busca {
+        width: 80%;
+    }
+
+    .janela-blog {
+        height: 600px;
+        width: 80%;
+        background-color: #68BDBA;
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        justify-content: space-between;
+        border-radius: 10px;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .text-box {
+        width: 90%;
+        text-align: center;
+        color: #132235e1;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 10px;
+
+
+    }
+
+    .imagem2 {
+        background-image: url(/img/housesharingFINAL.jpg);
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+
+    .janela-motivos {
+        padding: auto;
+        color: white;
+        width: 100%;
+        text-align: center;
+        display: block;
+
+    }
+
+    .motivos {
+
+        margin: auto;
+        gap: 20px;
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .motivos-card {
+        background-color: steelblue;
+        border-radius: 10px;
+
+        padding: 5%;
+        text-align: center;
+    }
+
+    .imgmotivo {
+        height: 60px;
+    }
+}
